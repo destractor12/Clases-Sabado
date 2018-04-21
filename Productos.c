@@ -72,3 +72,45 @@ void ordenarProductos(int idProducto[], char descripcion[][50], int stock[], flo
 
 }
 
+void modificarProductos(int idProducto[], char descripcion[][50], int stock[], float precioUnitario[], int cant)
+{
+    int flag=0;
+    int auxInt;
+    char rta;
+
+        mostrarProductos(idProducto, descripcion, stock, precioUnitario,cant);
+        printf("Ingresar IdProducto: ");
+        scanf("%d", idProducto);
+
+        if(idProducto[i]==idProducto)
+        {
+
+            printf("\nIngresar stock: ");
+            scanf("%d",auxInt);
+            fflush(stdin);
+
+            printf("\n¿Desea realizar la modificacion?");
+            scanf("%c",rta);
+
+            if(rta=='s')
+            {
+                idProducto=auxInt;
+
+            }
+            else
+            {
+                printf("\nAccion cancelada");
+            }
+            flag=1;
+        }
+
+
+}
+
+
+
+
+
+
+
+

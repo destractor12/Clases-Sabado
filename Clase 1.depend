@@ -12,3 +12,16 @@
 	"Productos.h"
 	<string.h>
 
+1524325092 source:c:\users\alumno\desktop\clases-sabado-master\productos.c
+	<stdio.h>
+	"Productos.h"
+	<string.h>
+
+1523722207 c:\users\alumno\desktop\clases-sabado-master\productos.h
+
+1524325318 source:c:\users\alumno\desktop\clases-sabado-master\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"Productos.h"
+

@@ -14,12 +14,11 @@ int main()
     float precioUnitario[T];
     int opcion;
     int posicion;
-    char seguir;
-    int i;
+    int flag;
 
     do
     {
-        printf("1. Cargar\n2. Mostrar\n3.Ordenar\n9.Salir");
+        printf("1. Cargar\n2. Mostrar\n3.Ordenar\n4.Modificar\n9.Salir\n");
         printf("Ingrese una opcion: ");
         scanf("%d", &opcion);
         switch(opcion)
@@ -49,21 +48,37 @@ int main()
 
 
                 break;
+
             case 2:
                 printf("Listado:\n");
                 mostrarProductos(idProducto, descripcion, stock, precioUnitario, T);
                 break;
+
             case 3:
                 printf("ORDENO\n");
-                                ordenarProductos(idProducto, descripcion, stock, precioUnitario, T);
+                ordenarProductos(idProducto, descripcion, stock, precioUnitario, T);
 
                 break;
+
+            case 4:
+                printf("Modificar\n");
+                int i;
+                for(i=0;i<T;i++)
+                {
+                    modificarProductos(idProducto,descripcion,stock,precioUnitario,T);
+                }
+                if(flag==0)
+                {
+                    printf("\nNo se encontro el id");
+                }
+
+            break;
         }
 
         system("pause");
         system("cls");
-    }
-    while(opcion!=9);
+
+    }while(opcion!=9);
 
     return 0;
 }
